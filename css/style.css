@@ -37,6 +37,16 @@ button:hover{
 
 }
 
+
+#fade, #modal {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+
+
 #fade{
     position: fixed;
     top:0;
@@ -72,15 +82,26 @@ button:hover{
 
 }
 
-.modal-body input{
-       
+
+.modal-body p{
     margin-bottom: 1rem;
+
+
 }
+
+
 
 .modal.hide,
 #fade.hide {
     opacity: 0;
+    pointer-events: none;
 
       
 }  
+
+.modal.hide{
+    top: 0;
+    
+
+}
 
