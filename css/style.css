@@ -4,6 +4,12 @@ padding: 0;
 margin:0;  
 box-sizing: border-box;
 }
+
+
+
+
+
+
 body{
     padding:1rem;
 
@@ -11,6 +17,9 @@ body{
 h1{
     margin-bottom: 1rem;
 }
+
+
+/* Estilização do botão.*/
 button{
     padding: 0.6rem 1.2rem ;
     background-color:grey;
@@ -28,11 +37,14 @@ button{
 
 }
 
+/* Abrir modal.*/
+
 #open-modal{
-    background-color: #007bff;
+    background-color: yellow;
+
 
 }
-button:hover{
+button:hover {
     opacity: 1;
 
 }
@@ -50,8 +62,7 @@ button:hover{
 #fade{
     position: fixed;
     top:0;
-    transform: translate(-50%, -50%);
-    left:0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: (rgba(0, 0, 0.6));
@@ -62,10 +73,14 @@ button:hover{
     position: fixed;
     left: 50%;
     top:50%;
+    transform: translate(-50%, -50%);
     background-color:aqua;
     z-index: 10;
     width: 500px;
     max-width: 90%;
+    padding: 1.2rem;
+    border-radius:  0.5rem;
+
     
 
 }
@@ -73,7 +88,7 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ccc ;
+    border-bottom: 1px solid red;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
 
@@ -82,16 +97,18 @@ button:hover{
 
 }
 
+/* Parte para estilizar o input(login)*/
 
-.modal-body p{
+.modal-body input{
     margin-bottom: 1rem;
+   
 
 
 }
 
+/* Estilizando as duas div */
 
-
-.modal.hide,
+#modal.hide,
 #fade.hide {
     opacity: 0;
     pointer-events: none;
@@ -101,7 +118,7 @@ button:hover{
 
 .modal.hide{
     top: 0;
-    
+
 
 }
 
